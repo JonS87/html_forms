@@ -1,0 +1,102 @@
+p {
+	color: black;
+}
+
+form {
+	margin-top: 100px;
+	margin-left: 30px;
+}
+
+div {
+	padding-top: 8px;
+	unicode-bidi: isolate;
+}
+
+:invalid {
+	/* border: 1px solid red */
+}
+
+.btn {
+	display: inline-block;
+	text-align: center;
+	vertical-align: middle;
+	user-select: none;
+	padding: 0.375rem .75rem;
+	font-family: -apple-system, BlinkMacSystemFont;
+	font-size: 1rem;
+	line-height: 1.5;
+	border-radius: .25rem;
+	border: 1px solid #ced4da;
+	background-color: rgb(220, 53, 69);
+	color: rgb(255, 255, 255);
+}
+
+*, ::after, ::before {
+	box-sizing: border-box;
+}
+
+.form-error {
+	position: absolute;
+	padding: 5px 0px;
+	max-width: 276px;
+	background: #fff;
+	box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.1);
+	z-index: 999;
+	border: 1px solid rgba(0, 0, 0, .2);
+	border-radius: .3rem;
+}
+
+.ChildrenTitle {
+	background-color: #f7f7f7;;
+	color: rgb(33, 37, 41);
+	display: block;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+	margin-bottom: 0;
+	margin-top: 0;
+	padding-left: 10px;
+	border-bottom: 1px solid #ebebeb;
+	border-top-left-radius: calc(.3rem - 1px);
+	border-top-right-radius: calc(.3rem - 1px);
+}
+
+.ChildrenMessage {
+	color: rgb(33, 37, 41);
+	display: block;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+	margin-bottom: 0;
+	margin-top: 0;
+	padding: 5px 10px;
+}
+
+.Arrow {
+	left: 90px;
+	width: .5rem;
+	height: 1rem;
+	margin: .3rem 0;
+	top: 85%;
+	position: absolute;
+	display: block;
+	transform: rotate(-90deg);
+}
+
+.Arrow::after, .Arrow::before {
+	box-sizing: border-box;
+	position: absolute;
+	display: block;
+	content: "";
+	border-color: transparent;
+	border-style: solid;
+}
+
+.Arrow::before {
+	left: 0;
+	border-width: .4rem .4rem .4rem 0;
+	border-right-color: rgba(0, 0, 0, .25);
+}
+
+.Arrow::after {
+	left: 1px;
+	border-width: .4rem .4rem .4rem 0;
+	border-right-color: #fff;
+}
+

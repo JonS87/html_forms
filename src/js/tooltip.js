@@ -28,8 +28,8 @@ export class Tooltip {
       id,
       element: tooltipElement,
     });
-    console.log(`Добавили в _tooltips id ${id}`);
-    console.dir(this._tooltips);
+    //console.log(`Добавили в _tooltips id ${id}`);
+    //console.dir(this._tooltips);
 
     document.body.appendChild(tooltipElement);
 
@@ -42,12 +42,12 @@ export class Tooltip {
   }
 
   removeTooltip(id) {
-    console.log(`удалить id - ${id}`);
+    //console.log(`удалить id - ${id}`);
     const tooltip = this._tooltips.find((t) => t.id === id);
     tooltip.element.remove();
 
     this._tooltips = this._tooltips.filter((t) => t.id !== id);
-    console.log("_tooltips после удаления");
-    console.dir(this._tooltips);
+    //console.log("_tooltips после удаления");
+    //console.dir(this._tooltips);
   }
 }

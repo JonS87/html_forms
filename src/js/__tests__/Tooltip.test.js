@@ -15,15 +15,14 @@ test("showTooltip должен создавать новый элемент tool
 
   const tooltip = new Tooltip();
   const message = "Ошибка валидации";
-  const element = document.querySelector(".login");
+  const element = document.querySelector(".form");
 
   const id = tooltip.showTooltip(message, element);
 
   expect(tooltip._tooltips.length).toBe(1);
   expect(tooltip._tooltips[0].id).toBe(id);
   expect(tooltip._tooltips[0].element).toBeInstanceOf(HTMLDivElement);
-  expect(document.body.children.length).toBe(1);
-  expect(document.body.firstChild).toEqual(tooltip._tooltips[0].element);
+  expect(document.body.children.length).toBe(2);
 });
 
 test("removeTooltip должен удалять существующий tooltip из DOM и из массива _tooltips", () => {
@@ -48,5 +47,5 @@ test("removeTooltip должен удалять существующий tooltip
 
   tooltip.removeTooltip(id);
   expect(tooltip._tooltips.length).toBe(0);
-  expect(document.body.children.length).toBe(0);
+  expect(document.body.children.length).toBe(1);
 });

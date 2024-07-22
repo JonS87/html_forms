@@ -10,11 +10,6 @@ const errors = {
     valueMissing: "Нам потребуется электропочта...",
     typeMismatch: "А это точно электропочта?",
   },
-  "credit-card": {
-    valueMissing:
-      "Предоставьте нам данные своей кредитной карты, это безопасно, честно",
-    patternMismatch: "Не удалось снять данные с вашей кредитной карты :(",
-  },
 };
 
 const tooltipFactory = new Tooltip();
